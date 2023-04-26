@@ -18,11 +18,20 @@ final class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setButtonsUI()
         updateUI()
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         nextQuestion()
+    }
+    
+    private func setButtonsUI() {
+        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        
+        for button in buttons {
+            button.layer.cornerRadius = button.frame.height / 2
+        }
     }
     
     private func updateUI() {
@@ -32,7 +41,7 @@ final class QuestionViewController: UIViewController {
             button.setTitle(answer, for: .normal)
         }
         
-        let progress = Float(questionIndex) / Float(questions.count - 1)
+        let progress = Float(questionIndex) / Float(questions.count)
         progressView.setProgress(progress, animated: true)
         
         let flag = questions[questionIndex].flag
