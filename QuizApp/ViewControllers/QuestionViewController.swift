@@ -32,7 +32,7 @@ final class QuestionViewController: UIViewController {
             button.setTitle(answer, for: .normal)
         }
         
-        let progress = Float(questionIndex) / Float(questions.count)
+        let progress = Float(questionIndex) / Float(questions.count - 1)
         progressView.setProgress(progress, animated: true)
         
         let flag = questions[questionIndex].flag
