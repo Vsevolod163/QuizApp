@@ -5,7 +5,6 @@
 //  Created by Vsevolod Lashin on 26.04.2023.
 //
 
-
 struct Question {
     let flag: String
     let answers: [String]
