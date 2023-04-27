@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Wt-dB-gUQ">
-                                <rect key="frame" x="56" y="96" width="208" height="138"/>
+                                <rect key="frame" x="44.333333333333343" y="189.66666666666663" width="341.33333333333326" height="226.33333333333337"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M3R-rQ-NUU">
-                                <rect key="frame" x="16" y="378" width="288" height="146"/>
+                                <rect key="frame" x="16" y="630" width="398" height="224"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG2-rO-kao">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yT-6C-xKP">
-                                        <rect key="frame" x="0.0" y="38.5" width="288" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="58" width="398" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -49,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1c-t0-j3c">
-                                        <rect key="frame" x="0.0" y="77" width="288" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="116" width="398" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -61,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se9-fR-lhT">
-                                        <rect key="frame" x="0.0" y="115.5" width="288" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="174" width="398" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -75,7 +75,7 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U7a-L1-wrW">
-                                <rect key="frame" x="0.0" y="544" width="320" height="4"/>
+                                <rect key="frame" x="0.0" y="874" width="430" height="4"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -110,34 +110,72 @@
             <objects>
                 <viewController id="0H0-fV-gwh" customClass="ResultViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tjm-of-EKx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-xf-PrA">
-                                <rect key="frame" x="90" y="266.5" width="140.5" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Начать заново"/>
-                                <connections>
-                                    <action selector="reloadButtonPressed" destination="0H0-fV-gwh" eventType="touchUpInside" id="6aj-mn-4ix"/>
-                                    <segue destination="grR-pU-lCK" kind="unwind" unwindAction="unwindFor:" id="7Q3-Pw-u2k"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brain" translatesAutoresizingMaskIntoConstraints="NO" id="msr-qF-yFd">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="436.33333333333331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы правильно ответили на 5 из 10 вопросов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-qP-72m">
+                                <rect key="frame" x="16" y="466.33333333333331" width="398" height="62.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-9o-7uU">
+                                <rect key="frame" x="0.0" y="528.66666666666663" width="430" height="403.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-xf-PrA">
+                                        <rect key="frame" x="87.333333333333329" y="172.33333333333337" width="255.33333333333337" height="58.666666666666657"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Начать заново">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reloadButtonPressed" destination="0H0-fV-gwh" eventType="touchUpInside" id="6aj-mn-4ix"/>
+                                            <segue destination="grR-pU-lCK" kind="unwind" unwindAction="unwindFor:" id="7Q3-Pw-u2k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="width" secondItem="1Jf-9o-7uU" secondAttribute="width" multiplier="0.59375" id="5t2-PO-OVm"/>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="centerX" secondItem="1Jf-9o-7uU" secondAttribute="centerX" id="Biq-G1-f12"/>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="height" secondItem="1Jf-9o-7uU" secondAttribute="height" multiplier="0.145585" id="cxe-1S-AZf"/>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="centerY" secondItem="1Jf-9o-7uU" secondAttribute="centerY" id="eoZ-gL-rSc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jw8-pX-Jyf"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F6D-xf-PrA" firstAttribute="centerX" secondItem="Tjm-of-EKx" secondAttribute="centerX" id="BbC-pK-257"/>
-                            <constraint firstItem="F6D-xf-PrA" firstAttribute="centerY" secondItem="Tjm-of-EKx" secondAttribute="centerY" id="cOK-oI-OZl"/>
+                            <constraint firstItem="1Jf-9o-7uU" firstAttribute="top" secondItem="gc2-qP-72m" secondAttribute="bottom" id="03m-ZO-Pej"/>
+                            <constraint firstItem="gc2-qP-72m" firstAttribute="leading" secondItem="Jw8-pX-Jyf" secondAttribute="leading" constant="16" id="8hO-0I-gus"/>
+                            <constraint firstItem="Jw8-pX-Jyf" firstAttribute="trailing" secondItem="gc2-qP-72m" secondAttribute="trailing" constant="16" id="KNp-kH-ruV"/>
+                            <constraint firstItem="1Jf-9o-7uU" firstAttribute="trailing" secondItem="Tjm-of-EKx" secondAttribute="trailing" id="Nh9-ho-ShC"/>
+                            <constraint firstItem="msr-qF-yFd" firstAttribute="top" secondItem="Tjm-of-EKx" secondAttribute="top" id="VTX-RM-5jO"/>
+                            <constraint firstItem="msr-qF-yFd" firstAttribute="height" secondItem="Tjm-of-EKx" secondAttribute="height" multiplier="0.46831" id="YQ9-Z3-S1h"/>
+                            <constraint firstItem="gc2-qP-72m" firstAttribute="top" secondItem="msr-qF-yFd" secondAttribute="bottom" constant="30" id="aJJ-fH-bKj"/>
+                            <constraint firstItem="msr-qF-yFd" firstAttribute="leading" secondItem="Jw8-pX-Jyf" secondAttribute="leading" id="wM5-EO-dAF"/>
+                            <constraint firstItem="Jw8-pX-Jyf" firstAttribute="trailing" secondItem="msr-qF-yFd" secondAttribute="trailing" id="wzE-s7-Z0p"/>
+                            <constraint firstItem="1Jf-9o-7uU" firstAttribute="leading" secondItem="Tjm-of-EKx" secondAttribute="leading" id="x4d-tO-fBS"/>
+                            <constraint firstItem="1Jf-9o-7uU" firstAttribute="bottom" secondItem="Tjm-of-EKx" secondAttribute="bottom" id="xNQ-iI-zgr"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myg-Ep-sJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="grR-pU-lCK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="954" y="12"/>
+            <point key="canvasLocation" x="952.5" y="11.619718309859156"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Brain" width="1500" height="845"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
