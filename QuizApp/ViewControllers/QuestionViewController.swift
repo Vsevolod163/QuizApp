@@ -15,6 +15,7 @@ final class QuestionViewController: UIViewController {
     
     private let questions = Question.getQuestions().shuffled()
     private var questionIndex = 0
+    private let countOfQuestions = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,22 @@ final class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        nextQuestion()
+        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        
+        for button in buttons {
+            if button.currentTitle == questions[questionIndex].rightAnswer {
+                button.backgroundColor = .green
+            }
+        }
+        
+        sender.backgroundColor = sender.currentTitle == questions[questionIndex].rightAnswer
+        ? .green
+        : .red
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
+            self.nextQuestion()
+        }
+    
     }
     
     private func setButtonsUI() {
@@ -38,10 +54,11 @@ final class QuestionViewController: UIViewController {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
         for (button, answer) in zip(buttons, questions[questionIndex].answers) {
+            button.backgroundColor = .systemBlue
             button.setTitle(answer, for: .normal)
         }
         
-        let progress = Float(questionIndex) / Float(questions.count)
+        let progress = Float(questionIndex) / Float(countOfQuestions)
         progressView.setProgress(progress, animated: true)
         
         let flag = questions[questionIndex].flag
@@ -51,7 +68,7 @@ final class QuestionViewController: UIViewController {
     private func nextQuestion() {
         questionIndex += 1
         
-        if questionIndex < questions.count {
+        if questionIndex < countOfQuestions {
             updateUI()
         }
     }
