@@ -17,6 +17,7 @@ final class QuestionViewController: UIViewController {
     private var questionIndex = 0
     private let countOfQuestions = 10
     private var timerIsOn = false
+    private var countOfRightAnswers = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,16 @@ final class QuestionViewController: UIViewController {
         updateUI()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        
+        resultVC.countOfRightAnswers = countOfRightAnswers
+        resultVC.countOfQuestions = countOfQuestions
+    }
+    
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         questionIndex = 0
+        countOfRightAnswers = 0
         questions = questions.shuffled()
         updateUI()
     }
@@ -37,9 +46,12 @@ final class QuestionViewController: UIViewController {
         timerIsOn = true
         let question = questions[questionIndex]
         
-        sender.backgroundColor = sender.currentTitle == question.rightAnswer
-            ? .green
-            : .red
+        if sender.currentTitle == question.rightAnswer {
+            sender.backgroundColor = .green
+            countOfRightAnswers += 1
+        } else {
+            sender.backgroundColor = .red
+        }
         
         for button in buttons {
             if button.currentTitle == question.rightAnswer && button.backgroundColor != .green {
