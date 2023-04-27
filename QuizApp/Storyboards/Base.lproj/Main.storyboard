@@ -79,7 +79,7 @@
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="U7a-L1-wrW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="27E-3o-lRL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U7a-L1-wrW" secondAttribute="bottom" constant="20" id="2aG-R6-pzB"/>
@@ -106,9 +106,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

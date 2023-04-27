@@ -16,6 +16,7 @@ final class QuestionViewController: UIViewController {
     private let questions = Question.getQuestions().shuffled()
     private var questionIndex = 0
     private let countOfQuestions = 10
+    private var timerIsOn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ final class QuestionViewController: UIViewController {
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        guard !timerIsOn else { return }
+        
+        timerIsOn = true
         
         for button in buttons {
             if button.currentTitle == questions[questionIndex].rightAnswer {
@@ -37,9 +41,9 @@ final class QuestionViewController: UIViewController {
         : .red
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
+            self.timerIsOn = false
             self.nextQuestion()
         }
-    
     }
     
     private func setButtonsUI() {
