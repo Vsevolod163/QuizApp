@@ -13,7 +13,7 @@ final class QuestionViewController: UIViewController {
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var flagImage: UIImageView!
     
-    private let questions = Question.getQuestions().shuffled()
+    private var questions = Question.getQuestions().shuffled()
     private var questionIndex = 0
     private let countOfQuestions = 10
     private var timerIsOn = false
@@ -21,6 +21,12 @@ final class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setButtonsUI()
+        updateUI()
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        questionIndex = 0
+        questions = questions.shuffled()
         updateUI()
     }
     
@@ -78,6 +84,8 @@ final class QuestionViewController: UIViewController {
         
         if questionIndex < countOfQuestions {
             updateUI()
+        } else {
+            performSegue(withIdentifier: "showResult", sender: nil)
         }
     }
 }

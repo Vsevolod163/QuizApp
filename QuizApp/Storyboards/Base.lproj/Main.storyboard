@@ -98,11 +98,43 @@
                         <outlet property="buttonsStackVIew" destination="M3R-rQ-NUU" id="EO2-C1-Bzu"/>
                         <outlet property="flagImage" destination="2Wt-dB-gUQ" id="KKU-sl-JcK"/>
                         <outlet property="progressView" destination="U7a-L1-wrW" id="jm8-U7-adu"/>
+                        <segue destination="0H0-fV-gwh" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="lyq-1z-vID"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127.5" y="11.619718309859156"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="NJz-aS-CfW">
+            <objects>
+                <viewController id="0H0-fV-gwh" customClass="ResultViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tjm-of-EKx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-xf-PrA">
+                                <rect key="frame" x="90" y="266.5" width="140.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Начать заново"/>
+                                <connections>
+                                    <action selector="reloadButtonPressed" destination="0H0-fV-gwh" eventType="touchUpInside" id="6aj-mn-4ix"/>
+                                    <segue destination="grR-pU-lCK" kind="unwind" unwindAction="unwindFor:" id="7Q3-Pw-u2k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jw8-pX-Jyf"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F6D-xf-PrA" firstAttribute="centerX" secondItem="Tjm-of-EKx" secondAttribute="centerX" id="BbC-pK-257"/>
+                            <constraint firstItem="F6D-xf-PrA" firstAttribute="centerY" secondItem="Tjm-of-EKx" secondAttribute="centerY" id="cOK-oI-OZl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myg-Ep-sJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="grR-pU-lCK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="12"/>
         </scene>
     </scenes>
     <resources>
