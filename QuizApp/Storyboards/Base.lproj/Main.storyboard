@@ -79,7 +79,7 @@
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.97563991834170849" green="0.97563991834170849" blue="0.97563991834170849" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="U7a-L1-wrW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="27E-3o-lRL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U7a-L1-wrW" secondAttribute="bottom" constant="20" id="2aG-R6-pzB"/>
@@ -142,7 +142,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.97563991829999996" green="0.97563991829999996" blue="0.97563991829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="width" secondItem="1Jf-9o-7uU" secondAttribute="width" multiplier="0.59375" id="5t2-PO-OVm"/>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="centerX" secondItem="1Jf-9o-7uU" secondAttribute="centerX" id="Biq-G1-f12"/>
@@ -151,7 +151,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jw8-pX-Jyf"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.97563991829999996" green="0.97563991829999996" blue="0.97563991829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="1Jf-9o-7uU" firstAttribute="top" secondItem="gc2-qP-72m" secondAttribute="bottom" id="03m-ZO-Pej"/>
                             <constraint firstItem="gc2-qP-72m" firstAttribute="leading" secondItem="Jw8-pX-Jyf" secondAttribute="leading" constant="16" id="8hO-0I-gus"/>
