@@ -9,8 +9,8 @@ import UIKit
 
 final class ResultViewController: UIViewController {
     
-    @IBOutlet var resultLabel: UILabel!
-    @IBOutlet var reloadButton: UIButton!
+    @IBOutlet private var resultLabel: UILabel!
+    @IBOutlet private var reloadButton: UIButton!
     
     var countOfRightAnswers: Int!
     var countOfQuestions: Int!
@@ -27,5 +27,4 @@ final class ResultViewController: UIViewController {
     @IBAction func reloadButtonPressed() {
         dismiss(animated: true)
     }
-    
 }

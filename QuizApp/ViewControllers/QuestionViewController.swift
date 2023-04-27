@@ -9,22 +9,26 @@ import UIKit
 
 final class QuestionViewController: UIViewController {
 
-    @IBOutlet var buttonsStackVIew: UIStackView!
-    @IBOutlet var progressView: UIProgressView!
-    @IBOutlet var flagImage: UIImageView!
+    // MARK: - IBOutlets
+    @IBOutlet private var buttonsStackVIew: UIStackView!
+    @IBOutlet private var progressView: UIProgressView!
+    @IBOutlet private var flagImage: UIImageView!
     
+    // MARK: - Private properties
     private var questions = Question.getQuestions().shuffled()
     private var questionIndex = 0
     private let countOfQuestions = 10
     private var timerIsOn = false
     private var countOfRightAnswers = 0
     
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setButtonsUI()
         updateUI()
     }
     
+    // MARK: - Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resultVC = segue.destination as? ResultViewController else { return }
         
@@ -32,6 +36,7 @@ final class QuestionViewController: UIViewController {
         resultVC.countOfQuestions = countOfQuestions
     }
     
+    // MARK: - Unwind for segue
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         questionIndex = 0
         countOfRightAnswers = 0
@@ -39,7 +44,8 @@ final class QuestionViewController: UIViewController {
         updateUI()
     }
     
-    @IBAction func answerButtonPressed(_ sender: UIButton) {
+    // MARK: - IBActions
+    @IBAction private func answerButtonPressed(_ sender: UIButton) {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         guard !timerIsOn else { return }
         
@@ -66,6 +72,7 @@ final class QuestionViewController: UIViewController {
         }
     }
     
+    // MARK: - Private functions
     private func setButtonsUI() {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
