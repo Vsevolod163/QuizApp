@@ -29,16 +29,18 @@ final class QuestionViewController: UIViewController {
         guard !timerIsOn else { return }
         
         timerIsOn = true
+        let question = questions[questionIndex]
+        
+        sender.backgroundColor = sender.currentTitle == question.rightAnswer
+            ? .green
+            : .red
         
         for button in buttons {
-            if button.currentTitle == questions[questionIndex].rightAnswer {
+            if button.currentTitle == question.rightAnswer && button.backgroundColor != .green {
                 button.backgroundColor = .green
+                break
             }
         }
-        
-        sender.backgroundColor = sender.currentTitle == questions[questionIndex].rightAnswer
-        ? .green
-        : .red
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
             self.timerIsOn = false
@@ -57,7 +59,9 @@ final class QuestionViewController: UIViewController {
     private func updateUI() {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
-        for (button, answer) in zip(buttons, questions[questionIndex].answers) {
+        let question = questions[questionIndex]
+        
+        for (button, answer) in zip(buttons, question.answers) {
             button.backgroundColor = .systemBlue
             button.setTitle(answer, for: .normal)
         }
@@ -65,7 +69,7 @@ final class QuestionViewController: UIViewController {
         let progress = Float(questionIndex) / Float(countOfQuestions)
         progressView.setProgress(progress, animated: true)
         
-        let flag = questions[questionIndex].flag
+        let flag = question.flag
         flagImage.image = UIImage(named: flag)
     }
     
