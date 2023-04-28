@@ -28,14 +28,6 @@ final class QuestionViewController: UIViewController {
         updateUI()
     }
     
-    // MARK: - Prepare for segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let resultVC = segue.destination as? ResultViewController else { return }
-        
-        resultVC.countOfRightAnswers = countOfRightAnswers
-        resultVC.countOfQuestions = countOfQuestions
-    }
-    
     override func viewWillLayoutSubviews() {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
@@ -44,6 +36,14 @@ final class QuestionViewController: UIViewController {
         }
         
         imageView.layer.cornerRadius = imageView.frame.height / 15
+    }
+    
+    // MARK: - Prepare for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        
+        resultVC.countOfRightAnswers = countOfRightAnswers
+        resultVC.countOfQuestions = countOfQuestions
     }
     
     // MARK: - Unwind for segue

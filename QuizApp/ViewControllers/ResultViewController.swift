@@ -17,11 +17,14 @@ final class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        reloadButton.layer.cornerRadius = reloadButton.frame.height / 2
         resultLabel.text = """
             Вы правильно ответили на
             \(countOfRightAnswers ?? 0) из \(countOfQuestions ?? 0) вопросов! 😊
             """
+    }
+    
+    override func viewWillLayoutSubviews() {
+        reloadButton.layer.cornerRadius = reloadButton.frame.height / 2
     }
     
     @IBAction func reloadButtonPressed() {
