@@ -16,6 +16,7 @@
 		C6A1F91529F9315300521895 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1F91429F9315300521895 /* Question.swift */; };
 		C6A1F91829F948A300521895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1F91729F948A300521895 /* Answer.swift */; };
 		C6E8448229FAAD1500951EF9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8448129FAAD1500951EF9 /* ResultViewController.swift */; };
+		C6F5473829FB4AA6002951BD /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5473729FB4AA6002951BD /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C6A1F91429F9315300521895 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C6A1F91729F948A300521895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		C6E8448129FAAD1500951EF9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C6F5473729FB4AA6002951BD /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				C6A1F8FF29F9307D00521895 /* QuestionViewController.swift */,
 				C6E8448129FAAD1500951EF9 /* ResultViewController.swift */,
+				C6F5473729FB4AA6002951BD /* StartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F5473829FB4AA6002951BD /* StartViewController.swift in Sources */,
 				C6A1F90029F9307D00521895 /* QuestionViewController.swift in Sources */,
 				C6A1F91529F9315300521895 /* Question.swift in Sources */,
 				C6A1F8FC29F9307D00521895 /* AppDelegate.swift in Sources */,
