@@ -27,7 +27,7 @@ final class ResultViewController: UIViewController {
         reloadButton.layer.cornerRadius = reloadButton.frame.height / 2
     }
     
-    @IBAction func reloadButtonPressed() {
+    @IBAction private func reloadButtonPressed() {
         dismiss(animated: true)
     }
 }

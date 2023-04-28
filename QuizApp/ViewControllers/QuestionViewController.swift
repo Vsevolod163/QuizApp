@@ -36,6 +36,7 @@ final class QuestionViewController: UIViewController {
         }
         
         imageView.layer.cornerRadius = imageView.frame.height / 15
+        imageView.layer.borderWidth = 1
     }
     
     // MARK: - Prepare for segue

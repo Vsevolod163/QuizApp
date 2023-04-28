@@ -9,7 +9,7 @@ import UIKit
 
 final class StartViewController: UIViewController {
     
-    @IBOutlet var buttonStackView: UIStackView!
+    @IBOutlet private var buttonStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
