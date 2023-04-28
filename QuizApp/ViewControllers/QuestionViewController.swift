@@ -12,7 +12,7 @@ final class QuestionViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet private var buttonsStackVIew: UIStackView!
     @IBOutlet private var progressView: UIProgressView!
-    @IBOutlet private var flagImage: UIImageView!
+    @IBOutlet private var imageView: UIImageView!
     
     var questions: [Question]!
     
@@ -25,7 +25,6 @@ final class QuestionViewController: UIViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setButtonsUI()
         updateUI()
     }
     
@@ -35,6 +34,16 @@ final class QuestionViewController: UIViewController {
         
         resultVC.countOfRightAnswers = countOfRightAnswers
         resultVC.countOfQuestions = countOfQuestions
+    }
+    
+    override func viewWillLayoutSubviews() {
+        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        
+        for button in buttons {
+            button.layer.cornerRadius = button.frame.height / 2
+        }
+        
+        imageView.layer.cornerRadius = imageView.frame.height / 15
     }
     
     // MARK: - Unwind for segue
@@ -74,14 +83,6 @@ final class QuestionViewController: UIViewController {
     }
     
     // MARK: - Private functions
-    private func setButtonsUI() {
-        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
-        
-        for button in buttons {
-            button.layer.cornerRadius = button.frame.height / 2
-        }
-    }
-    
     private func updateUI() {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
@@ -96,7 +97,7 @@ final class QuestionViewController: UIViewController {
         progressView.setProgress(progress, animated: true)
         
         let flag = question.flag
-        flagImage.image = UIImage(named: flag)
+        imageView.image = UIImage(named: flag)
     }
     
     private func nextQuestion() {

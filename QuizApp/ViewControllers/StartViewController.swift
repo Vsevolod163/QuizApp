@@ -9,9 +9,13 @@ import UIKit
 
 final class StartViewController: UIViewController {
     
+    @IBOutlet var buttonStackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        for subview in buttonStackView.arrangedSubviews {
+            subview.layer.cornerRadius = subview.frame.height / 2
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -21,7 +25,7 @@ final class StartViewController: UIViewController {
     }
     
     @IBAction func themeButtonPressed(_ sender: UIButton) {
-        if sender.currentTitle == "Флаги" {
+        if sender.currentTitle == "Страны" {
             performSegue(withIdentifier: "showQuestions", sender: Answer.shared.flags)
         } else if sender.currentTitle == "Кино" {
             performSegue(withIdentifier: "showQuestions", sender: Answer.shared.movies)
