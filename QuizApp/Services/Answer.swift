@@ -8,7 +8,7 @@
 final class Answer {
     static let shared = Answer()
     
-    let answers = [
+    let flags = [
         "Англия",
         "Абхазия",
         "Австралия",
@@ -209,6 +209,13 @@ final class Answer {
         "Южный Судан",
         "Ямайка",
         "Япония"
+    ]
+    
+    let movies = [
+        "Побег из Шоушенка",
+        "Зеленая миля",
+        "Человек-паук",
+        "Гладиатор"
     ]
     
     private init() {}

@@ -10,10 +10,9 @@ struct Question {
     let answers: [String]
     let rightAnswer: String
     
-    static func getQuestions() -> [Question] {
-        let shared = Answer.shared
-        let allAnswers = shared.answers.shuffled()
-        
+    static func getQuestions(answers: [String]) -> [Question] {
+    
+        let allAnswers = answers.shuffled()
         var result: [Question] = []
         var indexOfAnswer = 0
         

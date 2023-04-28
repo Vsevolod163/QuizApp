@@ -14,8 +14,9 @@ final class QuestionViewController: UIViewController {
     @IBOutlet private var progressView: UIProgressView!
     @IBOutlet private var flagImage: UIImageView!
     
+    var questions: [Question]!
+    
     // MARK: - Private properties
-    private var questions = Question.getQuestions().shuffled()
     private var questionIndex = 0
     private let countOfQuestions = 10
     private var timerIsOn = false
