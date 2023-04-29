@@ -11,11 +11,6 @@ final class StartViewController: UIViewController {
     
     @IBOutlet private var buttonStackView: UIStackView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     override func viewWillLayoutSubviews() {
         for subview in buttonStackView.arrangedSubviews {
             subview.layer.cornerRadius = subview.frame.height / 2

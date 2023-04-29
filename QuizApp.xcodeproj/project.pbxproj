@@ -104,9 +104,9 @@
 		C6A1F91229F930CA00521895 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6F5473729FB4AA6002951BD /* StartViewController.swift */,
 				C6A1F8FF29F9307D00521895 /* QuestionViewController.swift */,
 				C6E8448129FAAD1500951EF9 /* ResultViewController.swift */,
-				C6F5473729FB4AA6002951BD /* StartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

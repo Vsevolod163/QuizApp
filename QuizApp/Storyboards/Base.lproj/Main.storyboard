@@ -157,7 +157,7 @@
                         <outlet property="buttonsStackVIew" destination="M3R-rQ-NUU" id="EO2-C1-Bzu"/>
                         <outlet property="imageView" destination="2Wt-dB-gUQ" id="KKU-sl-JcK"/>
                         <outlet property="progressView" destination="U7a-L1-wrW" id="jm8-U7-adu"/>
-                        <segue destination="0H0-fV-gwh" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="lyq-1z-vID"/>
+                        <segue destination="0H0-fV-gwh" kind="show" identifier="showResult" id="2u6-O6-4qP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -185,7 +185,7 @@
                                 <rect key="frame" x="0.0" y="296" width="320" height="272"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-xf-PrA">
-                                        <rect key="frame" x="65" y="109" width="190" height="54"/>
+                                        <rect key="frame" x="65" y="110" width="190" height="52"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -194,14 +194,13 @@
                                         </state>
                                         <connections>
                                             <action selector="reloadButtonPressed" destination="0H0-fV-gwh" eventType="touchUpInside" id="6aj-mn-4ix"/>
-                                            <segue destination="grR-pU-lCK" kind="unwind" unwindAction="unwindFor:" id="kz8-5X-yZz"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97563991829999996" green="0.97563991829999996" blue="0.97563991829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="width" secondItem="1Jf-9o-7uU" secondAttribute="width" multiplier="0.59375" id="5t2-PO-OVm"/>
-                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="height" secondItem="1Jf-9o-7uU" secondAttribute="height" multiplier="0.2" id="7cJ-R3-V30"/>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="height" secondItem="1Jf-9o-7uU" secondAttribute="height" multiplier="0.19" id="8Vt-rc-VP4"/>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="centerX" secondItem="1Jf-9o-7uU" secondAttribute="centerX" id="Biq-G1-f12"/>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="centerY" secondItem="1Jf-9o-7uU" secondAttribute="centerY" id="eoZ-gL-rSc"/>
                                 </constraints>
@@ -223,13 +222,13 @@
                             <constraint firstItem="1Jf-9o-7uU" firstAttribute="bottom" secondItem="Tjm-of-EKx" secondAttribute="bottom" id="xNQ-iI-zgr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="y6l-of-9Jg"/>
                     <connections>
                         <outlet property="reloadButton" destination="F6D-xf-PrA" id="ocA-S2-6Uh"/>
                         <outlet property="resultLabel" destination="gc2-qP-72m" id="JTE-A6-Wmn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myg-Ep-sJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="grR-pU-lCK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1950" y="11.619718309859156"/>
         </scene>
@@ -239,7 +238,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aQo-GH-tjk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jSO-BA-pVK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

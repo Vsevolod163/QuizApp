@@ -17,9 +17,11 @@ final class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+        
         resultLabel.text = """
             Вы правильно ответили на
-            \(countOfRightAnswers ?? 0) из \(countOfQuestions ?? 0) вопросов! 😊
+            \(countOfRightAnswers ?? 0) из \(countOfQuestions ?? 0) вопросов! ✅
             """
     }
     
@@ -28,6 +30,6 @@ final class ResultViewController: UIViewController {
     }
     
     @IBAction private func reloadButtonPressed() {
-        dismiss(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }

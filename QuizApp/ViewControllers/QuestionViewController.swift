@@ -18,7 +18,7 @@ final class QuestionViewController: UIViewController {
     
     // MARK: - Private properties
     private var questionIndex = 0
-    private let countOfQuestions = 10
+    private let countOfQuestions = 1
     private var timerIsOn = false
     private var countOfRightAnswers = 0
     
@@ -36,7 +36,7 @@ final class QuestionViewController: UIViewController {
         }
         
         imageView.layer.cornerRadius = imageView.frame.height / 15
-        imageView.layer.borderWidth = 1
+        imageView.layer.borderWidth = 0.5
     }
     
     // MARK: - Prepare for segue
@@ -45,14 +45,6 @@ final class QuestionViewController: UIViewController {
         
         resultVC.countOfRightAnswers = countOfRightAnswers
         resultVC.countOfQuestions = countOfQuestions
-    }
-    
-    // MARK: - Unwind for segue
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-        questionIndex = 0
-        countOfRightAnswers = 0
-        questions = questions.shuffled()
-        updateUI()
     }
     
     // MARK: - IBActions
