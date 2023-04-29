@@ -13,7 +13,7 @@ final class StartViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         for subview in buttonStackView.arrangedSubviews {
-            subview.layer.cornerRadius = subview.frame.height / 2
+            subview.layer.cornerRadius = subview.frame.height / 5
         }
     }
     
