@@ -90,8 +90,8 @@ final class QuestionViewController: UIViewController {
         let progress = Float(questionIndex) / Float(countOfQuestions)
         progressView.setProgress(progress, animated: true)
         
-        let flag = question.flag
-        imageView.image = UIImage(named: flag)
+        let image = question.image
+        imageView.image = UIImage(named: image)
     }
     
     private func nextQuestion() {
