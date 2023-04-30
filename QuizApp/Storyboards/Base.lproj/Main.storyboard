@@ -185,9 +185,9 @@
                                 <rect key="frame" x="0.0" y="274" width="320" height="294"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-xf-PrA">
-                                        <rect key="frame" x="65" y="122" width="190" height="50"/>
+                                        <rect key="frame" x="48" y="120.5" width="224" height="53"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Новый Quiz">
                                             <color key="titleColor" red="0.97563991829999996" green="0.97563991829999996" blue="0.97563991829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -199,8 +199,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.97563991829999996" green="0.97563991829999996" blue="0.97563991829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="width" secondItem="1Jf-9o-7uU" secondAttribute="width" multiplier="0.59375" id="5t2-PO-OVm"/>
-                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="height" secondItem="1Jf-9o-7uU" secondAttribute="height" multiplier="0.17" id="8Vt-rc-VP4"/>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="width" secondItem="1Jf-9o-7uU" secondAttribute="width" multiplier="0.7" id="5t2-PO-OVm"/>
+                                    <constraint firstItem="F6D-xf-PrA" firstAttribute="height" secondItem="1Jf-9o-7uU" secondAttribute="height" multiplier="0.18" id="8Vt-rc-VP4"/>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="centerX" secondItem="1Jf-9o-7uU" secondAttribute="centerX" id="Biq-G1-f12"/>
                                     <constraint firstItem="F6D-xf-PrA" firstAttribute="centerY" secondItem="1Jf-9o-7uU" secondAttribute="centerY" id="eoZ-gL-rSc"/>
                                 </constraints>
