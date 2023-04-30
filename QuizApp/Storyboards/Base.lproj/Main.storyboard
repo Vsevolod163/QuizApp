@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aQo-GH-tjk">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="dhx-ES-Ogn" customClass="StartViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xPw-ak-J3n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DF2-44-Vyy">
-                                <rect key="frame" x="48" y="237.5" width="224" height="93"/>
+                                <rect key="frame" x="43" y="392" width="344" height="148"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eC-bL-y3H">
-                                        <rect key="frame" x="0.0" y="0.0" width="224" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="70"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-4x-7bP">
-                                        <rect key="frame" x="0.0" y="50.5" width="224" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="78" width="344" height="70"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -52,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="3eC-bL-y3H" firstAttribute="height" secondItem="xPw-ak-J3n" secondAttribute="height" multiplier="0.0751073" id="6hd-OQ-SST"/>
                             <constraint firstItem="DF2-44-Vyy" firstAttribute="centerY" secondItem="xPw-ak-J3n" secondAttribute="centerY" id="84F-sq-HcU"/>
-                            <constraint firstItem="3eC-bL-y3H" firstAttribute="width" secondItem="xPw-ak-J3n" secondAttribute="width" multiplier="0.7" id="OKX-tT-oK2"/>
+                            <constraint firstItem="3eC-bL-y3H" firstAttribute="width" secondItem="xPw-ak-J3n" secondAttribute="width" multiplier="0.8" id="OKX-tT-oK2"/>
                             <constraint firstItem="DF2-44-Vyy" firstAttribute="centerX" secondItem="xPw-ak-J3n" secondAttribute="centerX" id="cqu-Gq-fnc"/>
                         </constraints>
                     </view>
@@ -71,17 +71,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Wt-dB-gUQ">
-                                <rect key="frame" x="16" y="121" width="288" height="183"/>
+                                <rect key="frame" x="16" y="185.66666666666666" width="398" height="300.33333333333337"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M3R-rQ-NUU">
-                                <rect key="frame" x="16" y="341" width="288" height="183"/>
+                                <rect key="frame" x="16" y="569" width="398" height="285"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG2-rO-kao">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="65.333333333333329"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yT-6C-xKP">
-                                        <rect key="frame" x="0.0" y="47.5" width="288" height="40"/>
+                                        <rect key="frame" x="0.0" y="73.333333333333371" width="398" height="65.333333333333314"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -106,7 +106,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1c-t0-j3c">
-                                        <rect key="frame" x="0.0" y="95.5" width="288" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="146.66666666666663" width="398" height="65"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -118,7 +118,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se9-fR-lhT">
-                                        <rect key="frame" x="0.0" y="143" width="288" height="40"/>
+                                        <rect key="frame" x="0.0" y="219.66666666666663" width="398" height="65.333333333333314"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -132,7 +132,7 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U7a-L1-wrW">
-                                <rect key="frame" x="0.0" y="544" width="320" height="4"/>
+                                <rect key="frame" x="0.0" y="874" width="430" height="4"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -169,23 +169,23 @@
             <objects>
                 <viewController id="0H0-fV-gwh" customClass="ResultViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tjm-of-EKx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brain" translatesAutoresizingMaskIntoConstraints="NO" id="msr-qF-yFd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="436.33333333333331"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-qP-72m">
-                                <rect key="frame" x="16" y="274" width="288" height="0.0"/>
+                                <rect key="frame" x="16" y="444.33333333333331" width="398" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-9o-7uU">
-                                <rect key="frame" x="0.0" y="274" width="320" height="294"/>
+                                <rect key="frame" x="0.0" y="444.33333333333326" width="430" height="487.66666666666674"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-xf-PrA">
-                                        <rect key="frame" x="65" y="125" width="190" height="44"/>
+                                        <rect key="frame" x="87.333333333333329" y="207.33333333333331" width="255.33333333333337" height="73"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -238,7 +238,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aQo-GH-tjk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jSO-BA-pVK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
