@@ -18,13 +18,14 @@ final class QuestionViewController: UIViewController {
     
     // MARK: - Private properties
     private var questionIndex = 0
-    private let countOfQuestions = 1
+    private let countOfQuestions = 10
     private var timerIsOn = false
     private var countOfRightAnswers = 0
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Вопрос \(questionIndex + 1) из \(countOfQuestions)"
         updateUI()
     }
     
