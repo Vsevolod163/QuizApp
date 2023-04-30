@@ -25,7 +25,7 @@ final class QuestionViewController: UIViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Вопрос \(questionIndex + 1) из \(countOfQuestions)"
+        progressView.transform = CGAffineTransform(scaleX: 1, y: 2)
         updateUI()
     }
     
@@ -80,6 +80,7 @@ final class QuestionViewController: UIViewController {
     private func updateUI() {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
+        title = "Вопрос \(questionIndex + 1) из \(countOfQuestions)"
         let question = questions[questionIndex]
         
         for (button, answer) in zip(buttons, question.answers) {
