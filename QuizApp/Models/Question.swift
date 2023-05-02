@@ -14,10 +14,9 @@ struct Question {
     
         let allAnswers = answers.shuffled()
         var result: [Question] = []
-        var indexOfAnswer = 0
         
-        for _ in allAnswers {
-            let rightAnswer = allAnswers[indexOfAnswer]
+        for index in allAnswers.indices {
+            let rightAnswer = allAnswers[index]
             var wrongAnswers: [String] = []
             
             while wrongAnswers.count < 3 {
@@ -41,8 +40,6 @@ struct Question {
                     rightAnswer: rightAnswer
                 )
             )
-            
-            indexOfAnswer += 1
         }
         
         return result
